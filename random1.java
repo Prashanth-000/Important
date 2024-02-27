@@ -58,12 +58,12 @@ class cubenum extends Thread{
 public class random1{
     public static void main(String[] args) {
         Thread t1=new randomnum();
-        t1.run();
+        t1.start();
         Thread t2=new squarnum(5);
-        t2.run(); 
+        t2.start(); 
         Thread t3=new reversenum(143);
-        t3.run();
+        t3.start();
         Thread t4=new cubenum(5);
-        t4.run();
+        t4.start();
     }
 }
